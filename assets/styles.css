@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* Slow-fade Effect */
+@keyframes globalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes globalFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.slow-fade-transition {
+  view-transition-name: slow-fade;
+}
+
+::view-transition-old(slow-fade) {
+  animation: 0.6s ease-out both globalFadeOut;
+}
+::view-transition-new(slow-fade) {
+  animation: 0.8s ease-in both globalFadeIn;
+}
+
+
+/* Main CSS */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
