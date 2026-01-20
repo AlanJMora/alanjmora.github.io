@@ -1,6 +1,6 @@
 # Alan J. Mora - Official Artifact
 
-Sito ufficiale e archivio opere di Alan J. Mora. Sviluppato con Astro.
+Sito ufficiale di Alan J. Mora. Sviluppato con Astro.
 
 ## License & Copyright
 
