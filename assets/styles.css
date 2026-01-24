@@ -1103,24 +1103,17 @@ a,
   }
 }
 
-@media screen and (min-width: 992px) {
-  .main.text-page {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    padding-left: 80px !important;
-    max-width: 900px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: left !important;
+@keyframes mobileFluidFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
-  .text-page .container,
-  .text-page .content-container,
-  .text-page .items-container {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    text-align: left !important;
+  .page-fade-in {
+    will-change: auto !important;
+    transform: none !important;
+    animation: mobileFluidFade 0.3s linear forwards !important;
   }
-}
