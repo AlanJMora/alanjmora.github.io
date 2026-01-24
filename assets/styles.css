@@ -16,6 +16,22 @@ html {
 
 
 /* BODY & BASE TYPOGRAPHY */
+@font-face {
+  font-display: swap;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/playfair-display-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Permanent Marker';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/permanent-marker-v16-latin-regular.woff2') format('woff2');
+}
+
 body {
   margin: 0;
   padding: 0;
