@@ -505,6 +505,8 @@ p {
   object-fit: cover !important;
   display: block !important;
   animation: restoredBlur 1.2s ease-out forwards !important;
+  /* animation: fastFadeIn 0.6s ease-out forwards !important;
+  will-change: opacity; */
 }
 
 .projects-category-image-container.arc-img {
@@ -959,7 +961,7 @@ p {
   border-radius: 0 !important;
 }
 
-
+/* Book Cover Blur Effect */
 @keyframes restoredBlur {
   0% {
     filter: blur(12px) contrast(100%) brightness(80%) sepia(4%);
@@ -985,6 +987,20 @@ p {
   transform: none !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
 }
+
+/* Blur Substitute */
+/* @keyframes fastFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.projects-category-image-container img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  animation: fastFadeIn 0.6s ease-out forwards !important;
+  will-change: opacity;
+} */
 
 /* Ink-Line Mailing Forms */
 .mailing-list-wrapper {
